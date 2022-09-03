@@ -1,0 +1,18 @@
+
+Asymptotic Notations:
+
+Big O = Exact or Upper
+Theta = Exact
+Omega = Exact or Lower
+
+
+Analysis of Common and Multiple Loops:
+
+
+
+Analysis of Recursion:
+
+Time and Space Complexity
+
+
+
