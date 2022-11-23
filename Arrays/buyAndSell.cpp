@@ -16,7 +16,7 @@ int maxProfit(int price[], int n)
 
 int main()
 {
-    int arr1[] = {1, 2, 783, 4, 5};
+    int arr1[] = {1, 5, 3, 8, 12};
     int len = sizeof(arr1) / sizeof(arr1[0]);
     maxProfit(arr1, len);
     return 0;
