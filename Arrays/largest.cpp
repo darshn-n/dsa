@@ -10,7 +10,7 @@ int main()
     int res1 = largest1(arr1, len);
     int res2 = largest2(arr2, len);
     cout << res1 << endl;
-    cout << res2;
+    cout << res2 << endl;
     return 0;
 }
 
