@@ -32,7 +32,7 @@ int deletionArray(int arr[], int n, int x)
     }
 
     // i will have the index of the element that has to be deleted, So traverse from i itself;
-    for (int j = i; j < n; j++)
+    for (int j = i; j < n - 1; j++)
     {
         arr[j] = arr[j + 1];
     }
