@@ -13,8 +13,6 @@ int kthbit(int k, int n)
     {
         cout << "Yes";
     }
-    else
-    {
         cout << "No";
-    }
+    
 }
