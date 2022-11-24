@@ -1,6 +1,6 @@
 # DSA
 
-An Ultimate Repo for DS and A.
+An Ultimate Repo for DSA.
 
 ## Cloning
 
