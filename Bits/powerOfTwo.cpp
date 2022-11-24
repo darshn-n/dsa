@@ -20,10 +20,10 @@ int powerOfTwo(int n)
     }
     if (res == 1)
     {
-        cout << "Yes";
+        cout << "Yes" << endl;
     }
     else
     {
-        cout << "No";
+        cout << "No" << endl;
     }
 }

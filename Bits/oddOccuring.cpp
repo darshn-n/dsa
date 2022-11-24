@@ -20,6 +20,4 @@ int oddOccuring(int arr[10], int n)
     return res;
 }
 
-
-
 // Finding missing number in a natural sequence.
