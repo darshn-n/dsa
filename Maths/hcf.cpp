@@ -5,7 +5,8 @@ int optimizedGCD(int x, int y);
 int main()
 {
 
-    cout << euclidGCD(12, 4);
+    cout << euclidGCD(12, 4) << endl;
+    cout << optimizedGCD(12, 4);
 
     return 0;
 }
@@ -32,8 +33,5 @@ int optimizedGCD(int x, int y)
     {
         return x;
     }
-    else
-    {
-        return optimizedGCD(y, x % y);
-    }
+    return optimizedGCD(y, x % y);
 }
