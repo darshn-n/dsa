@@ -3,7 +3,7 @@ using namespace std;
 int kthbit(int k, int n);
 int main()
 {
-    kthbit(3, 5);
+    kthbit(1, 3);
     return 0;
 }
 
