@@ -9,7 +9,7 @@ int leadersArray(int arr[], int n)
         bool flag = true;
         for (int j = i + 1; j < n; j++)
         {
-            if (arr[i] <= arr[j])
+            if (arr[j] >= arr[i])
             {
                 flag = false;
                 break;
@@ -30,7 +30,7 @@ int leadersArray2(int arr[], int n)
     cout << arr[n - 1] << endl;
     for (int i = n - 2; i >= 0; i--)
     {
-        if (currentLeader < arr[i])
+        if (arr[i] > currentLeader)
         {
             currentLeader = arr[i];
             cout << arr[i] << endl;
