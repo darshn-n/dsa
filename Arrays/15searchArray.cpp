@@ -11,7 +11,7 @@ int main()
     int res1 = searchArray(arr1, len, 5);
     int res2 = searchArray(arr1, len, 9);
     cout << res1 << endl;
-    ;
+
     cout << res2;
     return 0;
 }
@@ -27,6 +27,5 @@ int searchArray(int arr[], int n, int x)
     }
     return -1;
 }
-
 
 // TC : O(n)
