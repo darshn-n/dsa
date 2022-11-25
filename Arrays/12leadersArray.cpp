@@ -40,7 +40,7 @@ int leadersArray2(int arr[], int n)
 
 int main()
 {
-    int arr1[] = {8, 7, 6, 5, 4, 3, 2, 1};
+    int arr1[] = {1, 5, 8, 3, 2, 6};
     int len = sizeof(arr1) / sizeof(arr1[0]);
 
     leadersArray(arr1, len);
