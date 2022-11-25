@@ -46,3 +46,5 @@ bool isSorted2(int arr[], int n)
     }
     return true;
 }
+
+
