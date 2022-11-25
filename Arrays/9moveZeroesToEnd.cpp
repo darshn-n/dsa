@@ -6,10 +6,9 @@ int main()
 {
     int arr1[] = {10, 10, 0, 23, 6, 3, 0, 12, 0, 0, 25};
     int len = sizeof(arr1) / sizeof(arr1[0]);
-    int res = moveZeroes(arr1, len);
-    int res1 = moveZeroes2(arr1, len);
-    cout << res << endl;
-    cout << res1;
+    moveZeroes(arr1, len);
+    moveZeroes2(arr1, len);
+
     return 0;
 }
 
