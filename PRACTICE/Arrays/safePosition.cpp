@@ -3,46 +3,45 @@
 using namespace std;
 
 // } Driver Code Ends
-class Solution {
-  public:
-    int solve(int n,int k)
+class Solution
+{
+public:
+    int solve(int n, int k)
 
     {
 
-        if(n==1)
+        if (n == 1)
 
-          return 0;
+            return 0;
 
         else
 
         {
 
-            return (solve(n-1,k)+k)%n;
-
+            return (solve(n - 1, k) + k) % n;
         }
-
     }
 
-    int safePos(int n, int k) {
+    int safePos(int n, int k)
+    {
 
-       return solve(n,k)+1; // code here
-
+        return solve(n, k) + 1; // code here
     }
 };
 
-
-
 //{ Driver Code Starts.
-int main() {
+int main()
+{
     int t;
     cin >> t;
-    while (t--) {
-        int n,k;
-        
-        cin>>n>>k;
+    while (t--)
+    {
+        int n, k;
+
+        cin >> n >> k;
 
         Solution ob;
-        cout << ob.safePos(n,k) << endl;
+        cout << ob.safePos(n, k) << endl;
     }
     return 0;
 }
