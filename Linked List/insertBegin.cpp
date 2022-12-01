@@ -36,7 +36,7 @@ void printList(Node *head)
 
 int main()
 {
-    Node *head = NULL;
+    Node *head = new Node(40);
     head = insertBegin(head, 20);
     head = insertBegin(head, 30);
     printList(head);
