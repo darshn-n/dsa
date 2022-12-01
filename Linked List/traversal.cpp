@@ -11,14 +11,14 @@ struct Node
     Node(int x)
     {
         data = x;
-        next = null;
+        next = NULL;
     }
 };
 
 void printList(Node *head)
 {
     Node *curr = head; // Initialising the first element
-    while (curr != null)
+    while (curr != NULL)
     {
         cout << curr->data << endl;
         curr = curr->next;
