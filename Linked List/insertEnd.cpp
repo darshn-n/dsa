@@ -32,10 +32,11 @@ Node *insertEnd(Node *head, int x)
     }
     Node *curr = head;
 
-    while (curr->next != NULL)
+    while (curr->next != NULL) // When last element is not null;
     {
         curr = curr->next;
     }
+    // When last element is null;
     curr->next = temp;
     return head;
 }
