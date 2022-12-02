@@ -30,6 +30,30 @@ Node *searchList(Node *head, int x)
     return -1;
 }
 
+Node *searchRecursive(Node *head, int x)
+{
+    if (head == null)
+    {
+        return -1;
+    }
+    if (head->data = x)
+    {
+        return 1;
+    }
+    else
+    {
+        int res = searchRecursive(head->next, x);
+        if (res == -1)
+        {
+            return -1
+        }
+        else
+        {
+            return (res + 1);
+        }
+    }
+}
+
 void printList(Node *head)
 {
     Node *curr = head;
@@ -47,6 +71,7 @@ int main()
     head->next->next = new Node(30);
 
     searchList(head, 90);
+    searchRecursive(head, 10);
     // printList(head);
     return 0;
 }
