@@ -12,21 +12,6 @@ struct Node
     }
 };
 
-Node *deleteHead(Node *head)
-{
-    if (head == NULL)
-    {
-        return NULL;
-    }
-    else
-    {
-        Node *temp = head->next;
-        delete head;
-
-        return temp;
-    }
-}
-
 void printList(Node *head)
 {
     Node *curr = head;
@@ -37,12 +22,32 @@ void printList(Node *head)
     }
 }
 
+Node *deleteEnd(Node *head)
+{
+    if (head == NULL)
+    {
+        return NULL;
+    }
+    else if (head->next == NULL)
+    {
+        delete head;
+        return NULL;
+    }
+    Node *curr = head;
+    while (curr->next->next != NULL)
+    {
+        curr = curr->next;
+    }
+    delete curr->next;
+    curr->next = NULL;
+    return head;
+}
+
 int main()
 {
     Node *head = new Node(10);
     head->next = new Node(20);
-    head->next->next = new Node(30);
-    deleteHead(head);
+    deleteEnd(head);
     printList(head);
     return 0;
 }
