@@ -72,6 +72,6 @@ int main()
 
     searchList(head, 90);
     searchRecursive(head, 10);
-    // printList(head);
+    printList(head);
     return 0;
 }
