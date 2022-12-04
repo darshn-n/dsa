@@ -31,7 +31,26 @@ Node *insertTail(Node *head, int data)
     return head;
 }
 
+void printList(Node *head)
+{
+    Node *curr = head; // Initialising the first element
+    while (curr != NULL)
+    {
+        cout << curr->data << endl;
+        curr = curr->next;
+    }
+}
+
 int main()
 {
+    Node *head = new Node(10);
+    Node *temp1 = new Node(20);
+    Node *temp2 = new Node(30);
+    head->next = temp1;
+    temp1->prev = head;
+    temp1->next = temp2;
+    temp2->prev = temp1;
+    insertTail(head, 40);
+    printList(head);
     return 0;
 }
