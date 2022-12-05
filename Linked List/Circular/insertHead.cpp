@@ -12,6 +12,12 @@ struct Node
     }
 };
 
+Node *insertHead(Node *head, int d)
+{
+    Node *temp = new Node(d);
+    
+}
+
 void printList(Node *head)
 {
 
