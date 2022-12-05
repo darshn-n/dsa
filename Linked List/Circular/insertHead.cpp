@@ -53,7 +53,7 @@ Node *insertHeadOpt(Node *head, int x)
     head->data = temp->data;
     temp->data = t;
 
-    return head;  // head remains constant only value will be changed.
+    return temp;  // head remains constant only value will be changed.
 }
 
 void printList(Node *head)

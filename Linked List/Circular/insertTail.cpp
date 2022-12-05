@@ -39,6 +39,19 @@ Node *insertTail(Node *head, int d)
         temp->next = temp;
         return temp;
     }
+
+    // 10 > 20 > 25 > 30;
+    // 10 > 15 > 20 > 25 > 30;
+
+    temp->next = head->next;
+    head->next = temp;
+
+    // Swap two data of first and second;
+    int t = head->data;
+    head->data = temp->data;
+    temp->data = t;
+
+    return temp; // head remains constant only value will be changed.
 }
 
 int main()
