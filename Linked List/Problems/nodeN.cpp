@@ -1,8 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
-
 struct Node
 {
     int data;
@@ -15,11 +13,24 @@ struct Node
     }
 };
 
-
-
-
-
-
+void printListFromEnd(Node *head, int n)
+{
+    int len = 0;
+    for (Node *curr = head; curr != nullptr; curr = curr->next)
+    {
+        len++;
+    }
+    if (len < n)
+    {
+        return;
+    }
+    Node *curr = head;
+    for (int i = 1; i < len + n - 1; i++)
+    {
+        curr = curr->next;
+    }
+    cout << curr->data;
+}
 
 int main()
 {
