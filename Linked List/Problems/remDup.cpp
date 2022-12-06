@@ -13,11 +13,20 @@ struct Node
     }
 };
 
-
-Node *remDup(Node *head){
-    
+Node *remDup(Node *head)
+{
+    Node *curr = head;
+    while (curr != nullptr || curr->next != nullptr)
+    {
+        if (curr->data == curr->next->data)
+        {
+            Node *temp = curr->next;
+            curr->next = curr->next->next;
+            delete temp;
+        }
+        curr = curr->next;
+    }
 }
-
 
 int main()
 {
