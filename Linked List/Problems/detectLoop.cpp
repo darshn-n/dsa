@@ -5,13 +5,17 @@ struct Node
 {
     int data;
     Node *next;
+    bool visited;
     // Constructor:
     Node(int x)
     {
         data = x;
         next = NULL;
+        visited = false;
     }
 };
+
+
 
 int main()
 {
