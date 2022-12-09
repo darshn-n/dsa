@@ -17,7 +17,7 @@ struct Node
 
 bool isLoop(Node *head)
 {
-    Node *temp = new Node;
+    Node *temp = new Node(1);
     Node *curr = head;
     while (curr->next != nullptr)
     {
