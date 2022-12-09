@@ -15,8 +15,27 @@ struct Node
     }
 };
 
+bool isLoop(Node *head)
+{
+    Node *temp = new Node;
+    Node *curr = head;
+    while (curr->next != nullptr)
+    {
+        if (curr->next == nullptr)
+        {
+            return false; // When is reaches to the last node;
+        }
+        if (curr->next == temp)
+        {
+            return true;
+        }
 
-
+        Node *newCurr = curr->next;
+        curr->next = temp;
+        curr = newCurr;
+    }
+    return false;
+}
 
 int main()
 {
