@@ -1,15 +1,5 @@
 #include <iostream>
 using namespace std;
-int setBits2(int n);
-int setBits(int n);
-
-int main()
-{
-    cout << setBits(5) << endl;
-
-    cout << setBits2(5) << endl;
-    return 0;
-}
 
 int setBits(int n)
 {
@@ -39,3 +29,11 @@ int setBits2(int n)
 }
 
 // Line 31: This line alone sets the last bit of a number from 1 to 0, reverse is not possible. It continously does until n==0;
+
+int main()
+{
+    cout << setBits(5) << endl;
+
+    cout << setBits2(5) << endl;
+    return 0;
+}
