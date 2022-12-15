@@ -1,11 +1,5 @@
 #include <iostream>
 using namespace std;
-int kthbit(int k, int n);
-int main()
-{
-    kthbit(1, 3);
-    return 0;
-}
 
 int kthbit(int k, int n)
 {
@@ -13,6 +7,13 @@ int kthbit(int k, int n)
     {
         cout << "Yes";
     }
-        cout << "No";
-    
+    cout << "No";
+}
+
+
+
+int main()
+{
+    kthbit(1, 3);
+    return 0;
 }
