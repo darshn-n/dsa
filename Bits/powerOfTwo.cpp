@@ -1,14 +1,6 @@
 
 #include <iostream>
 using namespace std;
-int powerOfTwo(int n);
-
-int main()
-{
-    powerOfTwo(6);
-    powerOfTwo(4);
-    return 0;
-}
 
 int powerOfTwo(int n)
 {
@@ -26,4 +18,11 @@ int powerOfTwo(int n)
     {
         cout << "No" << endl;
     }
+}
+
+int main()
+{
+    powerOfTwo(6);
+    powerOfTwo(4);
+    return 0;
 }
