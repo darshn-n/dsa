@@ -38,6 +38,12 @@ struct arrayStack
         return (top == -1);
     }
 };
+
+bool matching(char a, char b)
+{
+    return ((a == "(" && b == ")") || (a == "{" && b == "}") || (a == "[" && b == "]"));
+}
+
 bool isBalanced(string str)
 {
     arrayStack<char> s;
@@ -47,11 +53,23 @@ bool isBalanced(string str)
         {
             s.push(x);
         }
-        if (s.empty() == true)
+        else
         {
-            return false;
+            if (s.isEmpty() == true)
+            {
+                return false;
+            }
+            if (matching(s.top(), x) == false)
+            {
+                return false;
+            }
+            else
+            {
+                s.pop();
+            }
         }
     }
+    return (s.isEmpty() == true);
 }
 
 int main()
