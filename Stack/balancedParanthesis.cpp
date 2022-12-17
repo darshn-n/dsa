@@ -24,6 +24,7 @@ struct arrayStack
         top--;
         return res;
     }
+    
 
     int peek()
     {
