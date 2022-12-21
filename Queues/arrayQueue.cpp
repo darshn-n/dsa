@@ -75,12 +75,12 @@ int main()
     enqueue(queue, 40);
 
     cout << dequeue(queue)
-         << " dequeued from queue\n";
+        << " dequeued from queue\n";
 
     cout << "Front item is "
-         << front(queue) << endl;
+        << front(queue) << endl;
     cout << "Rear item is "
-         << rear(queue) << endl;
+        << rear(queue) << endl;
 
     return 0;
 }
