@@ -1,5 +1,4 @@
-/* Program to implement a stack using
-two queue */
+
 #include <bits/stdc++.h>
 
 using namespace std;
