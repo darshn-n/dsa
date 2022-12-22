@@ -77,9 +77,9 @@ int main()
     cout << dequeue(queue)
         << " dequeued from queue\n";
 
-    cout << "Front item is "
+    cout << "Front item :"
         << front(queue) << endl;
-    cout << "Rear item is "
+    cout << "Rear item :"
         << rear(queue) << endl;
 
     return 0;
