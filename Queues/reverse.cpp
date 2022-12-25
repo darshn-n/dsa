@@ -43,7 +43,7 @@ int main()
     queue<int> q;
     q.push(12);
     q.push(5);
-    q.push(15);
+    q.push(18);
     q.push(20);
 
     reverse(q);
