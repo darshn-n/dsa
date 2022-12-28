@@ -12,11 +12,6 @@ You can clone by copy and pasting below commands in your Terminal.
     code .
 ```
 
-App Folder Structure
-
-```
-(Keeps Updating Everyday.)
-```
 
 Tools and Language used in the Repo
 
