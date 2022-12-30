@@ -14,5 +14,6 @@ bool anagram(string s1, string s2)
 
 int main()
 {
+    cout << anagram("listen", "silent");
     return 0;
 }
