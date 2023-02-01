@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Whether permutations or not.
+
 bool anagram(string s1, string s2)
 {
     if (s1.length() != s2.length())
