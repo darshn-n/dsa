@@ -1,0 +1,6 @@
+Next Greater
+Previous Greater
+LRU Cache
+Histogram
+Stock Span
+Balanced Parenthesis
