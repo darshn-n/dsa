@@ -1,0 +1,5 @@
+Big O: At least
+
+Theta: Exact
+
+Omega: At Most
