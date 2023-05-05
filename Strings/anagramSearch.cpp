@@ -33,7 +33,7 @@ bool isPresent(string &txt, string &pat)
 int main()
 {
     string txt = "Darshan";
-    string pat = "Shad";
+    string pat = "shan";
     if (isPresent(txt, pat))
         cout << "Anagram search found";
     else
