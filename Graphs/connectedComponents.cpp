@@ -4,29 +4,29 @@ using namespace std;
 void DFSRec(vector<int> adj[], int s, bool visited[])
 {
     visited[s] = true;
-    cout << s << " ";
 
-    for (int v : adj[s])
+    for (int u : adj[s])
     {
-        if (visited[v] == false)
-            DFSRec(adj, v, visited);
+        if (visited[u] == false)
+            DFSRec(adj, u, visited);
     }
 }
 
-int DFS(vector<int> adj[], int V, int s)
+int DFS(vector<int> adj[], int V)
 {
-    bool visited[V];
     int count = 0;
+    bool visited[V];
     for (int i = 0; i < V; i++)
         visited[i] = false;
 
     for (int i = 0; i < V; i++)
-        if (visited[i] = false)
+    {
+        if (visited[i] == false)
         {
-            DFSRec(adj, s, visited);
+            DFSRec(adj, i, visited);
             count++;
         }
-
+    }
     return count;
 }
 
