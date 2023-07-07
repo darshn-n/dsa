@@ -20,3 +20,12 @@ Check Edge Present      O(v)        k
 Adjacent of u           Degree(u)   v
 Add and Edge            1           1
 Remove and Edge         v           1
+
+
+
+BFS Applications:
+
+Shortest Path
+Crawlers
+Peer to Peer
+Garbage Collection
