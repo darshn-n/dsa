@@ -11,3 +11,12 @@ Adjacency Matrix Representation:
 [1,0,0,0]
 ]
 
+Comparison:
+
+                        List        Matrix
+
+Memory                  v+e         v x v
+Check Edge Present      O(v)        k
+Adjacent of u           Degree(u)   v
+Add and Edge            1           1
+Remove and Edge         v           1
